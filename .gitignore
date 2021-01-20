@@ -1,0 +1,11 @@
+*.m~
+*.txt~
+
+# Output files from latex
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+
+from_bcilab/

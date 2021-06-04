@@ -35,10 +35,10 @@ for artid = intsec'
     if length(arts)==1
     	figure; 
     end
-    pop_topoplot(eegcleaned, 0, arts)
+    pop_topoplot(eegout, 0, arts)
     % store ICs to be removed
     artstoremove = [artstoremove arts'];
 end
 
-eegcleaned = pop_subcomp( eegcleaned, artstoremove, 0);
+eegcleaned = pop_subcomp(eegout, artstoremove, 0);
 eegcleaned = eeg_checkset( eegcleaned );
